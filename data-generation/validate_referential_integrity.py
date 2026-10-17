@@ -53,7 +53,7 @@ try:
                 foreing_key_not_exist.append(cond_invalidate)
 
 except FileNotFoundError:
-    print(f"No se encontró el archivo de conductores en: '{archivo_conductores}'", file=sys.stderr)
+    print(f"No se encontró el archivo de conductores en: '{ruta_carpeta}'", file=sys.stderr)
     sys.exit(1)
 except KeyError as e:
     print(f"Columnas requeridas ('cod_zona_asignada' o 'cond_id') no encontradas. Detalles: {e}", file=sys.stderr)
