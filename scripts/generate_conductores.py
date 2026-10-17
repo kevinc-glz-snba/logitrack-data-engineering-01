@@ -4,7 +4,7 @@ from pathlib import Path
 import csv
 import hashlib
 from datetime import date
-
+from catalogo_ciudades import ciudades
 fake = Faker("es_CO")
 
 #Ruta para guardar el archivo CSV
@@ -26,18 +26,6 @@ vehiculos = [
     "camion",
 ]
 
-ciudades = {
-    "Bogotá": 1,
-    "Barranquilla": 2,
-    "Medellín": 3,
-    "Bucaramanga": 4,
-    "Pereira": 5,
-    "Manizales": 6,
-    "Cartagena": 7,
-    "Santa Marta": 8,
-    "Cucutá": 9,
-}
-
 tipo_documento = [
     "Licencia_Conducir",
     "Cedula_Ciudadania",
@@ -58,8 +46,6 @@ campos = [
     "calificacion"
 ]
 
-total_conductores = 0
-
 datos = []
 
 
@@ -72,7 +58,7 @@ for con in range(50):
     tipo_doc = random.choice(tipo_documento)
     num_doc_hash = hashlib.sha256(str(fake.random_int(min=10000000, max=99999999)).encode()).hexdigest()
     fec_ingreso = fake.date_between(start_date= date(2025, 1, 1), end_date= date(2025, 12, 31))
-    id_ciudad_base = random.choice(list(ciudades.values()))
+    id_ciudad_base = random.choice(list(ciudades.keys()))
     tipo_vehiculo = random.choice(vehiculos)
     cod_zona_asignada = random.randint(1, 30)
     activo = random.choices(population=[True, False], weights=[85, 15],k=1)[0]  # 85% de probabilidad de ser True
