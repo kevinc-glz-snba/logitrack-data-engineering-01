@@ -18,6 +18,9 @@ data/raw/
 data/processed/
 data-generation/data/
 
+# Datos convertidos
+data/parquet/
+
 # Archivos locales de Spark
 spark-warehouse/
 
@@ -31,3 +34,4 @@ spark-warehouse/
 # Archivos del sistema y editor
 .DS_Store
 .vscode/
+
