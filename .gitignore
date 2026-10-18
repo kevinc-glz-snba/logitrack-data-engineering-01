@@ -28,11 +28,13 @@ data/anomalies/
 spark-warehouse/
 
 # Terraform
-.terraform/
-*.tfstate
-*.tfstate.*
-*.tfvars
-!*.tfvars.example
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/*.tfplan
+**/crash.log
+**/crash.*.log
+
 
 # Archivos del sistema y editor
 .DS_Store
