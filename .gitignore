@@ -21,6 +21,9 @@ data-generation/data/
 # Datos convertidos
 data/parquet/
 
+# Datos con anomalías controladas
+data/anomalies/
+
 # Archivos locales de Spark
 spark-warehouse/
 
