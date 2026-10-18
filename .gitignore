@@ -11,10 +11,12 @@ venv/
 __pycache__/
 *.pyc
 .pytest_cache/
+*.py[cod]
 
 # Datos generados
 data/raw/
 data/processed/
+data-generation/data/
 
 # Archivos locales de Spark
 spark-warehouse/

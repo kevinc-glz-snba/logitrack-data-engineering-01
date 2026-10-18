@@ -1,0 +1,14 @@
+{
+    "semilla": 42,
+    "fecha_inicio": "2025-01-01",
+    "fecha_fin": "2025-12-31",
+    "volumenes": {
+        "ope_conductores": 500,
+        "cli_remitentes": 200,
+        "geo_zonas": 300,
+        "tms_envios": 2000000,
+        "gps_rutas": 100000,
+        "cal_destinatarios": 300000,
+        "dir_novedades": 150000
+    }
+}
