@@ -1,0 +1,14 @@
+# Generación de datos sintéticos
+Faker==40.43.0
+
+# Procesamiento de datos
+numpy==2.5.4
+pandas==3.0.6
+pyarrow==26.0.0
+
+# PostgreSQL
+SQLAlchemy==2.1.5
+psycopg[binary]==3.3.6
+
+# Variables de entorno
+python-dotenv==1.2.4
