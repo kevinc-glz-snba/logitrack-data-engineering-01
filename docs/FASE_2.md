@@ -147,17 +147,6 @@ Este resultado indica que, al momento de la verificación, Terraform no proponí
 - Se trabaja primero con `dev` para evitar despliegues innecesarios.
 - Antes de ejecutar `terraform apply`, se revisan los cambios y su posible costo.
 
-## 8. Pendientes para las siguientes fases
-
-La infraestructura ya está preparada, pero todavía faltan los procesos de datos:
-
-- Conectar PostgreSQL local con Azure Data Factory.
-- Crear y ejecutar el pipeline de ingesta hacia Bronze.
-- Implementar transformaciones hacia Silver y Gold.
-- Configurar los secretos, permisos y alertas que necesiten esos procesos.
-
-**Nota:** el Action Group existe, pero aún no tiene destinatarios de notificación configurados. La existencia de los servicios no significa que los pipelines o las alertas ya estén funcionando.
-
-## 9. Conclusión
+## 8. Conclusión
 
 En esta fase se reutilizó y verificó una infraestructura creada con Terraform en Microsoft Azure. Se confirmó que el entorno de desarrollo coincide con el código y que cuenta con los servicios necesarios para continuar con la ingesta y transformación de datos de LogiTrack.

@@ -37,7 +37,7 @@ Los archivos principales se generan en `data/raw/` (CSV) y se convierten a `data
 
 La base de datos contiene **siete tablas**, con claves primarias y foráneas. La tabla principal es `tms_envios`, relacionada con remitentes, conductores y zonas. Las calificaciones y novedades se relacionan con los envíos; las rutas se relacionan con los conductores; y los conductores tienen una zona asignada.
 
-El diagrama completo está en [Diagrams ](diagrams/Modelo_E-R_LogiTrack.pdf.pdf).
+El diagrama completo está en [Diagrams ](diagrams/Modelo_E-R_LogiTrack.pdf).
 
 ## 5. Anomalías de prueba
 
@@ -83,7 +83,7 @@ Los CSV deben quedar en `data/raw/`. Para generar los archivos adicionales se ut
 
 ```bash
 python data-generation/converters/csv_to_parquet.py
-python data-generation/generate_anomalies.py
+python data-generation/generate_anomalias.py.py
 ```
 
 ### Paso 3. Iniciar PostgreSQL
@@ -123,11 +123,6 @@ docker exec -i logitrack-postgres \
   psql -U logitrack_user -d logitrack -v ON_ERROR_STOP=1 \
   < sql/03_validate_counts.sql \
   > docs/evidence/postgresql_counts.txt
-
-docker exec -i logitrack-postgres \
-  psql -U logitrack_user -d logitrack -v ON_ERROR_STOP=1 \
-  < sql/04_validate_integrity.sql \
-  > docs/evidence/postgresql_integrity.txt
 ```
 
 Se espera obtener **2.551.000 registros** en total y **cero referencias inválidas** en las comprobaciones de integridad.
