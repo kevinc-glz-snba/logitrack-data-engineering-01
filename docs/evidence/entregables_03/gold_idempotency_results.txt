@@ -1,0 +1,47 @@
+========== PRUEBA DE IDEMPOTENCIA GOLD ==========
+Creando respaldo temporal...
+
+Ejecutando: pipelines.gold.build_dim_conductores
+PASS: ejecución de pipelines.gold.build_dim_conductores
+
+Ejecutando: pipelines.gold.build_dim_remitentes
+PASS: ejecución de pipelines.gold.build_dim_remitentes
+
+Ejecutando: pipelines.gold.build_dim_zonas
+PASS: ejecución de pipelines.gold.build_dim_zonas
+
+Ejecutando: pipelines.gold.build_fact_envios
+PASS: ejecución de pipelines.gold.build_fact_envios
+
+Ejecutando: pipelines.gold.build_fact_rutas
+PASS: ejecución de pipelines.gold.build_fact_rutas
+
+Ejecutando: pipelines.gold.build_fact_desempeno_conductor
+PASS: ejecución de pipelines.gold.build_fact_desempeno_conductor
+
+Ejecutando: pipelines.gold.build_fact_trazabilidad_envio
+PASS: ejecución de pipelines.gold.build_fact_trazabilidad_envio
+
+Ejecutando: pipelines.gold.build_fact_alertas_zona
+PASS: ejecución de pipelines.gold.build_fact_alertas_zona
+
+Ejecutando: pipelines.gold.aggregations.build_aggregations
+PASS: ejecución de pipelines.gold.aggregations.build_aggregations
+
+Ejecutando: pipelines.gold.aggregations.build_kpi_ejecutivo
+PASS: ejecución de pipelines.gold.aggregations.build_kpi_ejecutivo
+
+========== RESULTADOS ==========
+Archivos originales: 51
+Archivos posteriores: 51
+Archivos faltantes: 0
+Archivos adicionales: 0
+Archivos con hash diferente: 1
+
+HASH DIFERENTE:
+kpi_resumen_ejecutivo.parquet
+
+RESULTADO: FAIL - Archivos no idénticos
+
+Restaurando archivos Gold originales...
+Respaldo restaurado.

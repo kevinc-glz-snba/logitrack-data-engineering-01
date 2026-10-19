@@ -1,0 +1,22 @@
+
+Cargando agregaciones...
+
+KPI_RESUMEN_EJECUTIVO GENERADO
+fecha_inicio: 2025-01-01 00:00:00
+fecha_fin: 2025-12-31 00:00:00
+total_envios: 2000000
+envios_entregados: 1899666
+envios_fallidos: 100334
+tasa_entrega: 0.949833
+tasa_fallo: 0.050167
+tasa_cumplimiento_sla: 0.51698
+conductores_con_envios: 500
+zonas_con_envios: 300
+total_alertas_zona: 28104
+evaluaciones_desempeno: 130500
+evaluaciones_con_score: 49755
+cobertura_score: 0.38126436781609196
+score_promedio_disponible: 0.8582508290624059
+fecha_generacion_utc: 2026-10-18 23:36:06.843404+00:00
+
+Archivo generado: data/gold/kpi_resumen_ejecutivo.parquet

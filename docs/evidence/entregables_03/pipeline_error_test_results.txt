@@ -1,0 +1,10 @@
+
+PRUEBA DE REGISTRO DE ERRORES
+
+Excepción capturada correctamente
+Tipo: ZeroDivisionError
+Capa: GOLD
+Batch: TEST_ERROR_001
+Registro enviado a PostgreSQL
+
+PRUEBA FINALIZADA CORRECTAMENTE

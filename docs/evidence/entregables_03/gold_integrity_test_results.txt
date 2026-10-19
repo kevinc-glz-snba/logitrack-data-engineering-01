@@ -1,0 +1,35 @@
+
+VALIDACIÓN INTEGRAL DE GOLD
+
+1. DIMENSIONES
+OK - 500 conductores
+OK - 200 remitentes
+OK - 300 zonas
+
+2. TABLAS DE HECHOS
+OK - 100,000 rutas
+OK - 130,500 registros de desempeño
+OK - 150,000 registros de trazabilidad
+OK - 78,300 registros zona-fecha
+
+3. INTEGRIDAD DE CLAVES
+OK - Conductores sin claves duplicadas
+OK - Remitentes sin claves duplicadas
+OK - Zonas sin claves duplicadas
+OK - Novedades sin claves duplicadas
+OK - Desempeño sin conductor-fecha duplicados
+OK - Alertas sin zona-fecha duplicados
+
+4. INDICADORES
+OK - Scores de desempeño entre 0 y 1
+OK - Tasas de fallo entre 0 y 1
+OK - Tasas diarias de entrega válidas
+OK - Tasas diarias de SLA válidas
+
+5. AGREGACIONES
+OK - Agregación diaria conserva 2,000,000 de envíos
+OK - Agregación incluye los 500 conductores
+OK - Agregación incluye las 300 zonas
+OK - Alertas agregadas coinciden con tabla de alertas
+
+VALIDACIONES GOLD SUPERADAS

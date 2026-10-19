@@ -1,0 +1,93 @@
+==========================================
+VALIDACIONES AUTOMATIZADAS DE CALIDAD
+==========================================
+
+
+==========================================
+PRUEBA: tests.test_calificaciones
+==========================================
+Registros de prueba: 10
+Registros válidos: 7
+Registros rechazados: 3
+
+Motivos de rechazo:
+ id_calificacion              motivo_rechazo
+          150000          puntaje invalido; 
+          150001             id_envio nulo; 
+          150003 id_calificacion duplicado; 
+
+PRUEBA SUPERADA
+RESULTADO: PASS
+
+==========================================
+PRUEBA: tests.test_envios
+==========================================
+Registros de prueba: 10
+Registros válidos: 6
+Registros rechazados: 4
+
+Motivos de rechazo:
+ id_envio             motivo_rechazo
+  1799956            peso invalido; 
+  1799957    estado_final invalido; 
+  1799958 entregado sin fecha real; 
+  1799960       id_envio duplicado; 
+
+PRUEBA SUPERADA
+RESULTADO: PASS
+
+==========================================
+PRUEBA: pipelines.quality.validate_referencias
+==========================================
+
+VALIDACIONES DE INTEGRIDAD REFERENCIAL
+
+id_remitente -> id_remitente: 0 referencias inválidas | APROBADA
+cond_id -> cond_id: 0 referencias inválidas | APROBADA
+cond_id -> cond_id: 0 referencias inválidas | APROBADA
+id_envio -> id_envio: 0 referencias inválidas | APROBADA
+id_envio -> id_envio: 0 referencias inválidas | APROBADA
+
+Total de referencias inválidas: 0
+VALIDACIONES SUPERADAS
+RESULTADO: PASS
+
+==========================================
+PRUEBA: tests.test_gold_integrity
+==========================================
+
+VALIDACIÓN INTEGRAL DE GOLD
+
+1. DIMENSIONES
+OK - 500 conductores
+OK - 200 remitentes
+OK - 300 zonas
+
+2. TABLAS DE HECHOS
+OK - 100,000 rutas
+OK - 130,500 registros de desempeño
+OK - 150,000 registros de trazabilidad
+OK - 78,300 registros zona-fecha
+
+3. INTEGRIDAD DE CLAVES
+OK - Conductores sin claves duplicadas
+OK - Remitentes sin claves duplicadas
+OK - Zonas sin claves duplicadas
+OK - Novedades sin claves duplicadas
+OK - Desempeño sin conductor-fecha duplicados
+OK - Alertas sin zona-fecha duplicados
+
+4. INDICADORES
+OK - Scores de desempeño entre 0 y 1
+OK - Tasas de fallo entre 0 y 1
+OK - Tasas diarias de entrega válidas
+OK - Tasas diarias de SLA válidas
+
+5. AGREGACIONES
+OK - Agregación diaria conserva 2,000,000 de envíos
+OK - Agregación incluye los 500 conductores
+OK - Agregación incluye las 300 zonas
+OK - Alertas agregadas coinciden con tabla de alertas
+
+VALIDACIONES GOLD SUPERADAS
+RESULTADO: PASS

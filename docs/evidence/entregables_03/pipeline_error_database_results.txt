@@ -1,0 +1,5 @@
+ id_error |          fecha_error          | capa |          proceso           |    tipo_error     |  mensaje_error   |    batch_id    |  estado   
+----------+-------------------------------+------+----------------------------+-------------------+------------------+----------------+-----------
+        1 | 2026-10-18 23:46:54.693354+00 | GOLD | test_pipeline_error_logger | ZeroDivisionError | division by zero | TEST_ERROR_001 | PENDIENTE
+(1 row)
+

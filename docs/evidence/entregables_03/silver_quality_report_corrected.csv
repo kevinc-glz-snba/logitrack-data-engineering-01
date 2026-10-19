@@ -1,0 +1,3 @@
+fecha_reporte,tabla,registros_entrada,registros_validos,registros_rechazados,porcentaje_validos
+2026-10-18T19:14:53.898260+00:00,cal_destinatarios,300000,300000,0,100.0
+2026-10-18T19:14:53.914585+00:00,tms_envios,2000000,2000000,0,100.0
